@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,7 +16,6 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
     public partial class hrReserva : Form
     {
         private int numero;
-        private string conn = "Server= ;Database= ;Trusted_Connection= ;";
         private string nome_laboratorio;
         public hrReserva(int numRecebido)
         {
@@ -94,44 +93,63 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
         private void btnReservar_Click(object sender, EventArgs e)
         {
+                string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
 
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(conn)) {
-                    string sqlVerificator = "SELECT COUNT(*) FROM tb_reserva WHERE nome_reserva = @nome_reserva";
-                    SqlCommand verification = new SqlCommand(sqlVerificator, connection);
-                    verification.Parameters.AddWithValue("@nome_reserva", nome_laboratorio);
-
-                    connection.Open();
-                    int count = (int)verification.ExecuteScalar();
-                    connection.Close();
-
-                    if (count > 0)
+                using (MySqlConnection connection = new MySqlConnection(data_source))
+                {
+                    try
                     {
-                        MessageBox.Show("Já existe uma reserva com este nome!");
-                        return;
+                        connection.Open();
+
+                        // Verificar se já existe uma reserva com o mesmo nome de utilizador e horário
+                        string verificationSql = "SELECT COUNT(*) FROM tb_rlab1 WHERE nome_utilizador = @nome_utilizador AND horario = @horario AND data_reserva = @data_reserva";
+
+                        using (MySqlCommand verification = new MySqlCommand(verificationSql, connection))
+                        {
+                            verification.Parameters.AddWithValue("@nome_utilizador", txtUtilizador.Text);
+                            verification.Parameters.AddWithValue("@horario", mskHorario.Text);
+                            verification.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
+
+                            int count = Convert.ToInt32(verification.ExecuteScalar());
+
+                            if (count > 0)
+                            {
+                                MessageBox.Show("Já existe uma reserva com este nome e horário!");
+                                return;
+                            }
+
+                            else 
+                            {
+                            string insertSql = "INSERT INTO tb_rlab1(nome_utilizador, evento, data_reserva, horario) VALUES (@nome_utilizador, @evento, @data_reserva, @horario)";
+
+                            using (MySqlCommand command = new MySqlCommand(insertSql, connection))
+                            {
+                                command.Parameters.AddWithValue("@nome_utilizador", txtUtilizador.Text);
+                                command.Parameters.AddWithValue("@evento", txtEvento.Text);
+                                command.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
+                                command.Parameters.AddWithValue("@horario", mskHorario.Text);
+
+                                command.ExecuteNonQuery();
+                            }
+
+                            MessageBox.Show("Reserva feita com sucesso!");
+                            }
+                        }
+
                     }
-
-                    string sql = "INSERT INTO tb_reserva(nome_reseva, nome_utilizador, evento, data_reserva, data_utilizacao, horario) VALUES (@nome_reseva, @nome_utilizador, @evento, @data_reserva, @data_utilizacao, @horario)";
-                    SqlCommand command = new SqlCommand(sql, connection);
-
-                    command.Parameters.AddWithValue("@nome_utilizador", txtUtilizador.Text);
-                    command.Parameters.AddWithValue("@evento", txtEvento.Text);
-                    command.Parameters.AddWithValue("@data_reserva", DateTime.Now.Date);
-                    command.Parameters.AddWithValue("@data_utilizacao", dtData.Value);
-                    command.Parameters.AddWithValue("@horario", mskHorario);
-
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                    connection.Close();
-
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex.Message);
+                    }
+                    finally
+                    {
+                        if (connection.State == ConnectionState.Open)
+                        {
+                            connection.Close();
+                        }
+                    
+                    }
                 }
-            } 
-            catch (Exception ex) {
-                MessageBox.Show("Erro ao inserir dados: " + ex.Message);
-            }
-
-
         }
 
         private void label5_Click(object sender, EventArgs e)
