@@ -1,0 +1,25 @@
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe.config
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.AssemblyReference.cache
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormInicio.resources
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.resources
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.GenerateResource.cache
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.CoreCompileInputs.cache
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).exe
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormRelatorio.resources
+E:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormReserva.resources
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe.config
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.AssemblyReference.cache
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormInicio.resources
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormRelatorio.resources
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormReserva.resources
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.resources
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.GenerateResource.cache
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.CoreCompileInputs.cache
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).exe
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+D:\projetoMagali\wform-reserva-lab(E ESSE AQUI)\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.pages.labs.hrReserva.resources
