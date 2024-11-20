@@ -18,15 +18,16 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLab1_Click(object sender, EventArgs e)
         {
-            hrReserva fLab1 = new hrReserva();
-            fLab1.Show();
+            hrReserva fLab = new hrReserva(1);
+            fLab.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            hrReserva fLab = new hrReserva(4);
+            fLab.Show();
         }
 
         private void FormReserva_Load(object sender, EventArgs e)
@@ -36,22 +37,36 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            hrReserva fLab = new hrReserva(5);
+            fLab.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            hrReserva fLab = new hrReserva(6);
+            fLab.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            hrReserva fLab = new hrReserva(7);
+            fLab.Show();
         }
 
         private void lblLab1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            hrReserva fLab = new hrReserva(2);
+            fLab.Show();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            hrReserva fLab = new hrReserva(3);
+            fLab.Show();
         }
     }
 }
