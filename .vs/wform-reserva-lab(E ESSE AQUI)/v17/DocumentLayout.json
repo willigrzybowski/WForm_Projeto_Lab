@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\",
+  "WorkspaceRootPath": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|e:\\wiliian\\projetos\\projetomagalilabs\\wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|e:\\wiliian\\projetos\\projetomagalilabs\\wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|e:\\wiliian\\projetos\\projetomagalilabs\\wform-reserva-lab(e esse aqui)\\pages\\formreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\formreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:1:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|c:\\users\\julia duarte\\downloads\\etec\\2024\\wform_projeto_lab\\wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|e:\\wiliian\\projetos\\projetomagalilabs\\wform-reserva-lab(e esse aqui)\\pages\\formreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\formreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|e:\\wiliian\\projetos\\projetomagalilabs\\wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:2:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|c:\\users\\julia duarte\\downloads\\etec\\2024\\wform_projeto_lab\\wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{2F7D16E9-DFBD-42A9-AF85-6E11705B5EB7}|wform-reserva-lab(E ESSE AQUI)\\wform-reserva-lab(E ESSE AQUI).csproj|solutionrelative:wform-reserva-lab(e esse aqui)\\pages\\labs\\formlab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormLab.cs",
-              "DocumentMoniker": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "DocumentMoniker": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
               "RelativeDocumentMoniker": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
-              "ToolTip": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "ToolTip": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
               "RelativeToolTip": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowDUAAAANAAAA",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAowJcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T15:26:25.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLab.cs",
+              "DocumentMoniker": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "RelativeDocumentMoniker": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "ToolTip": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "RelativeToolTip": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T13:30:42.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormLab.cs [Design]",
-              "DocumentMoniker": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
+              "DocumentMoniker": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
               "RelativeDocumentMoniker": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs",
-              "ToolTip": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs [Design]",
+              "ToolTip": "C:\\Users\\JULIA DUARTE\\Downloads\\Etec\\2024\\WForm_Projeto_Lab\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs [Design]",
               "RelativeToolTip": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T13:23:08.631Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormLab.Designer.cs",
-              "DocumentMoniker": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.Designer.cs",
-              "RelativeDocumentMoniker": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.Designer.cs",
-              "ToolTip": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.Designer.cs",
-              "RelativeToolTip": "wform-reserva-lab(E ESSE AQUI)\\pages\\labs\\FormLab.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:22:48.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormReserva.cs",
-              "DocumentMoniker": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs",
-              "RelativeDocumentMoniker": "wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs",
-              "ToolTip": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs",
-              "RelativeToolTip": "wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:19:29.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormReserva.cs [Design]",
-              "DocumentMoniker": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs",
-              "RelativeDocumentMoniker": "wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs",
-              "ToolTip": "E:\\Wiliian\\Projetos\\ProjetoMagaliLabs\\wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs [Design]",
-              "RelativeToolTip": "wform-reserva-lab(E ESSE AQUI)\\pages\\FormReserva.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T13:17:05.995Z",
               "EditorCaption": " [Design]"
             }
           ]

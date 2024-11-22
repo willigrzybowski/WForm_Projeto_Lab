@@ -285,7 +285,7 @@
             this.mskHorario.Location = new System.Drawing.Point(271, 193);
             this.mskHorario.Mask = "00:00";
             this.mskHorario.Name = "mskHorario";
-            this.mskHorario.Size = new System.Drawing.Size(98, 26);
+            this.mskHorario.Size = new System.Drawing.Size(46, 26);
             this.mskHorario.TabIndex = 35;
             // 
             // mskHorarioReservado
@@ -301,7 +301,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1364, 749);
             this.Controls.Add(this.mskHorarioReservado);
             this.Controls.Add(this.mskHorario);
             this.Controls.Add(this.dtData);
