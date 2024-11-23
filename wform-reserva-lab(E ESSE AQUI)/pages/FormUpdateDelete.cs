@@ -53,6 +53,47 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 
             }
         }
+
+        private void RefreshDataGridView()
+        {
+            // Limpa todas as linhas da DataGridView
+            dGrdView.Rows.Clear();
+
+            // Recarrega os dados atualizados
+            using (MySqlConnection connection = new MySqlConnection(data_source))
+            {
+                connection.Open();
+                string query = @"
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab1
+            UNION ALL
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab2
+            UNION ALL
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab3
+            UNION ALL
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsiberia
+            UNION ALL
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsalamaker
+            UNION ALL
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rauditorio
+            UNION ALL
+            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlabquimica";
+
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    dGrdView.Rows.Add(
+                        reader["id_reserva"].ToString(),
+                        reader["nome_utilizador"].ToString(),
+                        reader["evento"].ToString(),
+                        Convert.ToDateTime(reader["data_reserva"]).ToString("yyyy-MM-dd"),
+                        reader["horario"].ToString()
+                    );
+                }
+            }
+        }
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtNomeUti.Text))
@@ -73,32 +114,33 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                     UNION ALL
                     SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsiberia WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rSalaMaker WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsalamaker WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rAuditorio WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rauditorio WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlabQuimica WHERE nome_utilizador LIKE @nome_utilizador"; 
-                
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlabquimica WHERE nome_utilizador LIKE @nome_utilizador";
+
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.Parameters.AddWithValue("@nome_utilizador", "%" + txtNomeUti.Text + "%");
+                dGrdView.Rows.Clear();
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                        dGrdView.Rows.Add(
+
+                    dGrdView.Rows.Add(
                         reader["id_reserva"].ToString(),
                         reader["nome_utilizador"].ToString(),
                         reader["evento"].ToString(),
                         Convert.ToDateTime(reader["data_reserva"]).ToString("yyyy-MM-dd"),
                         reader["horario"].ToString()
                         );
-                        
-                    }
                 }
             }
-        
+        }
+
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
@@ -125,6 +167,18 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                 return;
             }
 
+            string horario = mskHorario.Text;
+
+            if (horario.Length == 5)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Formato de horário inválido. Use HH:mm (exemplo: 14:30).");
+                return;
+            }
+
             using (MySqlConnection connection = new MySqlConnection(data_source))
             {
                 connection.Open();
@@ -137,10 +191,12 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                 cmd.Parameters.AddWithValue("@horario", mskHorario.Text);
                 cmd.Parameters.AddWithValue("@id_reserva", idReserva);
 
+
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Reserva atualizada com sucesso!");
 
             }
+            RefreshDataGridView();
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -182,7 +238,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 
         private string GetTabelaByIdReserva(int idReserva)
         {
-            string[] tabelas = new string[] { "tb_rlab1", "tb_rlab2", "tb_rlab3", "tb_rsiberia", "tb_rSalaMaker", "tb_rAuditorio", "tb_rlabQuimica" };
+            string[] tabelas = new string[] { "tb_rlab1", "tb_rlab2", "tb_rlab3", "tb_rsiberia", "tb_rsalamaker", "tb_rauditorio", "tb_rlabquimica" };
             foreach (var tabela in tabelas)
             {
                 if (ReservaExisteNaTabela(tabela, idReserva))
@@ -220,6 +276,26 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             dGrdView.Rows.Clear();
 
         }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dGrdView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHorario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+}
 

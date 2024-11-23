@@ -83,6 +83,36 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FundoFazerReserva1 {
+            get {
+                object obj = ResourceManager.GetObject("FundoFazerReserva1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FundoFazerReserva2 {
+            get {
+                object obj = ResourceManager.GetObject("FundoFazerReserva2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FundoFazerReserva3 {
+            get {
+                object obj = ResourceManager.GetObject("FundoFazerReserva3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FundoInicio {
             get {
                 object obj = ResourceManager.GetObject("FundoInicio", resourceCulture);
@@ -163,9 +193,49 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Relatorio {
+            get {
+                object obj = ResourceManager.GetObject("Relatorio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReservaCRUD {
+            get {
+                object obj = ResourceManager.GetObject("ReservaCRUD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SalaMaker {
             get {
                 object obj = ResourceManager.GetObject("SalaMaker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seta1 {
+            get {
+                object obj = ResourceManager.GetObject("seta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seta2 {
+            get {
+                object obj = ResourceManager.GetObject("seta2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

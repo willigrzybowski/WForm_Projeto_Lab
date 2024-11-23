@@ -182,5 +182,20 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
         {
             Dispose();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dGrdView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

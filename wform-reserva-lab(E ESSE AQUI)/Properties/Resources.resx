@@ -118,32 +118,44 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Lab1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lab1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Relatorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Relatorio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FundoInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FundoInicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LabQuimica" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LabQuimica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Siberia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Siberia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lab2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lab2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="seta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Auditorio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Auditorio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FundoInicio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FundoInicio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Siberia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Siberia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoFazerReserva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoFazerReserva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoInicio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoFazerReserva2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoFazerReserva2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FundoReservas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FundoReservas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lab2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lab2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoFazerReserva3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoFazerReserva3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoFazerReserva1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoFazerReserva1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SalaMaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SalaMaker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,7 +163,16 @@
   <data name="Lab3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lab3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FundoFazerReserva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FundoFazerReserva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lab1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lab1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LabQuimica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LabQuimica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoInicio1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoInicio1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReservaCRUD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReservaCRUD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
