@@ -153,6 +153,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -170,6 +171,42 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="imagem\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoInicio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoReservas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalaMaker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siberia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lab3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lab1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lab2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabQuimica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Auditorio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoFazerReserva.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -205,6 +205,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "FormUpdateDelete";
             this.Text = "FormUpdateDelete";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormUpdateDelete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dGrdView)).EndInit();
             this.ResumeLayout(false);

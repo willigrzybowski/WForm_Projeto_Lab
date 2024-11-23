@@ -33,16 +33,18 @@
             this.btnReserva = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.btnUpdateDelete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(465, 131);
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(218, 147);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(384, 55);
+            this.lblTitulo.Size = new System.Drawing.Size(540, 75);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Seja Bem-Vindo!";
             this.lblTitulo.Click += new System.EventHandler(this.lblTitulo_Click);
@@ -50,8 +52,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(550, 202);
+            this.label1.Location = new System.Drawing.Point(379, 235);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 25);
@@ -61,14 +64,15 @@
             // 
             // btnReserva
             // 
-            this.btnReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReserva.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReserva.Location = new System.Drawing.Point(485, 316);
-            this.btnReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
+            this.btnReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnReserva.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReserva.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReserva.Location = new System.Drawing.Point(310, 364);
+            this.btnReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnReserva.Name = "btnReserva";
             this.btnReserva.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnReserva.Size = new System.Drawing.Size(337, 58);
+            this.btnReserva.Size = new System.Drawing.Size(353, 65);
             this.btnReserva.TabIndex = 3;
             this.btnReserva.Text = "Fazer Reserva";
             this.btnReserva.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -77,14 +81,13 @@
             // 
             // btnRelatorio
             // 
-            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorio.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.Location = new System.Drawing.Point(485, 399);
-            this.btnRelatorio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
+            this.btnRelatorio.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.Location = new System.Drawing.Point(310, 449);
+            this.btnRelatorio.Margin = new System.Windows.Forms.Padding(2);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnRelatorio.Size = new System.Drawing.Size(337, 58);
+            this.btnRelatorio.Size = new System.Drawing.Size(353, 63);
             this.btnRelatorio.TabIndex = 4;
             this.btnRelatorio.Text = "Gerar Relatorio";
             this.btnRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,25 +96,44 @@
             // 
             // btnUpdateDelete
             // 
-            this.btnUpdateDelete.Location = new System.Drawing.Point(485, 479);
+            this.btnUpdateDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
+            this.btnUpdateDelete.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateDelete.Location = new System.Drawing.Point(310, 533);
+            this.btnUpdateDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateDelete.Name = "btnUpdateDelete";
-            this.btnUpdateDelete.Size = new System.Drawing.Size(337, 51);
-            this.btnUpdateDelete.TabIndex = 5;
-            this.btnUpdateDelete.Text = "Atualizar & Cancelar";
-            this.btnUpdateDelete.UseVisualStyleBackColor = true;
+            this.btnUpdateDelete.Size = new System.Drawing.Size(353, 63);
+            this.btnUpdateDelete.TabIndex = 4;
+            this.btnUpdateDelete.Text = "   Reservas";
+            this.btnUpdateDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdateDelete.UseVisualStyleBackColor = false;
             this.btnUpdateDelete.Click += new System.EventHandler(this.btnUpdateDelete_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(220)))), ((int)(((byte)(190)))));
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1171, 631);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(169, 51);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "SAIR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 591);
+            this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoInicio1;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnUpdateDelete);
             this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.btnReserva);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reserva de Laboratorios";
@@ -129,6 +151,7 @@
         private System.Windows.Forms.Button btnReserva;
         private System.Windows.Forms.Button btnRelatorio;
         private System.Windows.Forms.Button btnUpdateDelete;
+        private System.Windows.Forms.Button button1;
     }
 }
 

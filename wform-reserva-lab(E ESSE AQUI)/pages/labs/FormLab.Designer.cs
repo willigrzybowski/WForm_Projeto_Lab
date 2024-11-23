@@ -179,6 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoFazerReserva;
             this.ClientSize = new System.Drawing.Size(1364, 749);
             this.Controls.Add(this.mskHorario);
             this.Controls.Add(this.dtData);
