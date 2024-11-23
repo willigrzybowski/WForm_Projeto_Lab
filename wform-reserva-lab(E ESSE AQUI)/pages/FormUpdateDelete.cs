@@ -91,7 +91,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                         reader["id_reserva"].ToString(),
                         reader["nome_utilizador"].ToString(),
                         reader["evento"].ToString(),
-                        reader["data_reserva"].ToString(),
+                        Convert.ToDateTime(reader["data_reserva"]).ToString("yyyy-MM-dd"),
                         reader["horario"].ToString()
                         );
                         
@@ -217,6 +217,8 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             txtEvento.Clear();
             dtData.ResetText();
             mskHorario.Clear();
+            dGrdView.Rows.Clear();
+
         }
     }
     }
