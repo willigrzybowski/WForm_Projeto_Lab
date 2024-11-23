@@ -158,12 +158,13 @@
             // 
             // dtData
             // 
-            this.dtData.CustomFormat = "dd/MM/yyyy";
-            this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtData.CustomFormat = "yyyy/MM/dd";
+            this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtData.Location = new System.Drawing.Point(288, 217);
             this.dtData.Name = "dtData";
             this.dtData.Size = new System.Drawing.Size(350, 26);
             this.dtData.TabIndex = 33;
+            this.dtData.Value = new System.DateTime(2024, 11, 23, 0, 0, 0, 0);
             this.dtData.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // mskHorario

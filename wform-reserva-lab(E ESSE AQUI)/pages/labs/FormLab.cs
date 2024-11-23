@@ -24,7 +24,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
             
         }
-
+        
         private void FormLab1_Load(object sender, EventArgs e)
         {
             if (numero == 1)
@@ -92,7 +92,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
         private void btnReservar_Click(object sender, EventArgs e)
         {
-                string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
+                string data_source = "datasource=localhost; username=root; password=; database=reserva_laboratorio";
 
                 using (MySqlConnection connection = new MySqlConnection(data_source))
                 {

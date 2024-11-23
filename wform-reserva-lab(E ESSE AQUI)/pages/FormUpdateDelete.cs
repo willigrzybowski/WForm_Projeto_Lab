@@ -14,7 +14,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 {
     public partial class FormUpdateDelete : Form
     {
-        string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
+        string data_source = "datasource=localhost; username=root; password=; database=reserva_laboratorio";
 
         public FormUpdateDelete()
         {
@@ -127,7 +127,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 
                 cmd.Parameters.AddWithValue("@nome_utilizador", txtNomeUti.Text);
                 cmd.Parameters.AddWithValue("@evento", txtEvento.Text);
-                cmd.Parameters.AddWithValue("@data_reserva", dtData.Text);
+                cmd.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
                 cmd.Parameters.AddWithValue("@horario", mskHorario.Text);
                 cmd.Parameters.AddWithValue("@id_reserva", idReserva);
 
