@@ -14,7 +14,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 {
     public partial class FormUpdateDelete : Form
     {
-        string data_source = "datasource=localhost; username=root; password=; database=reserva_laboratorio";
+        string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
 
         public FormUpdateDelete()
         {
@@ -108,6 +108,12 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                 return;
             }
 
+            DialogResult result = MessageBox.Show("Você tem certeza que deseja atualizar esta reserva?", "Confirmar Atualização", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
             DataGridViewRow selectedRow = dGrdView.SelectedRows[0];
 
             int idReserva = Convert.ToInt32(selectedRow.Cells["id_reserva"].Value);
@@ -142,6 +148,12 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             if (dGrdView.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Selecione uma reserva para excluir.");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Você tem certeza que deseja excluir esta reserva?", "Confirmar Atualização", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
                 return;
             }
 
