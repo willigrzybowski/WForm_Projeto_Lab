@@ -116,6 +116,12 @@
     <Compile Include="pages\FormRelatorio.Designer.cs">
       <DependentUpon>FormRelatorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="pages\FormUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pages\FormUpdateDelete.Designer.cs">
+      <DependentUpon>FormUpdateDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="pages\labs\FormLab.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pages\FormReserva.resx">
       <DependentUpon>FormReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pages\FormUpdateDelete.resx">
+      <DependentUpon>FormUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pages\labs\FormLab.resx">
       <DependentUpon>FormLab.cs</DependentUpon>

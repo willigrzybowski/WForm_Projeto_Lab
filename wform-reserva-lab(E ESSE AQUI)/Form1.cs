@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using wform_reserva_lab_E_ESSE_AQUI_.pages;
 
 namespace wform_reserva_lab_E_ESSE_AQUI_
 {
@@ -49,6 +50,12 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdateDelete_Click(object sender, EventArgs e)
+        {
+            FormUpdateDelete fUpdateDel = new FormUpdateDelete();
+            fUpdateDel.Show();
         }
     }
 }

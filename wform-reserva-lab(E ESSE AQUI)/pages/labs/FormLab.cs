@@ -20,7 +20,6 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
         public hrReserva(int numRecebido)
         {
             InitializeComponent();
-            HideProgramarReserva();
             numero = numRecebido;
 
             
@@ -101,7 +100,6 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
                     {
                         connection.Open();
 
-                        // Verificar se já existe uma reserva com o mesmo nome de utilizador e horário
                         string verificationSql = "SELECT COUNT(*) FROM tb_rlab1 WHERE nome_utilizador = @nome_utilizador AND horario = @horario AND data_reserva = @data_reserva";
 
                         using (MySqlCommand verification = new MySqlCommand(verificationSql, connection))
@@ -204,66 +202,16 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtUtilizadorProgramado.Text = string.Empty;
-            txtEventoProgramada.Text = string.Empty;
-            txtDiaSemana.Text = string.Empty;
             txtEvento.Text = string.Empty;
             txtUtilizador.Text = string.Empty;
             mskHorario.Text = string.Empty;
-            mskHorarioReservado.Text = string.Empty;
             dtData.Value = DateTime.Now;
-        }
-
-        private void btnProgramarReserva_Click(object sender, EventArgs e)
-        {
-            ShowProgramarReserva();
-            HideReserva();
-
         }
 
         private void btnReserva_Click(object sender, EventArgs e)
         {
 
-           HideProgramarReserva();
            ShowReserva();
-        }
-
-
-        //Métodos:
-        public void HideProgramarReserva()
-        {
-            lblUtilizadorProgramada.Hide();
-            lblEventoProgramada.Hide();
-            lblHorarioProgramada.Hide();
-            lblSemana.Hide();
-
-            txtUtilizadorProgramado.Hide();
-            txtEventoProgramada.Hide();
-            txtDiaSemana.Hide();
-        }
-
-        public void ShowProgramarReserva()
-        {
-            lblUtilizadorProgramada.Show();
-            lblEventoProgramada.Show();
-            lblHorarioProgramada.Show();
-            lblSemana.Show();
-
-            txtEventoProgramada.Show();
-            txtUtilizadorProgramado.Show();
-            txtDiaSemana.Show();
-        }
-
-        public void HideReserva()
-        {
-            lblUtilizador.Hide();
-            lblEvento.Hide();
-            lblHorario.Hide();
-            lblData.Hide();
-
-            txtEvento.Hide();
-            txtUtilizador.Hide();
-
         }
 
         public void ShowReserva() {
