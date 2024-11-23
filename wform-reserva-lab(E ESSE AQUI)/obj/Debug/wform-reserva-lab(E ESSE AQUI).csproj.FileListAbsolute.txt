@@ -115,3 +115,4 @@ C:\Users\JULIA DUARTE\Downloads\Etec\2024\WForm_Projeto_Lab\wform-reserva-lab(E 
 C:\Users\JULIA DUARTE\Downloads\Etec\2024\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-re.1179C797.Up2Date
 C:\Users\JULIA DUARTE\Downloads\Etec\2024\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).exe
 C:\Users\JULIA DUARTE\Downloads\Etec\2024\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+C:\Users\JULIA DUARTE\Downloads\Etec\2024\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.pages.FormUpdateDelete.resources
