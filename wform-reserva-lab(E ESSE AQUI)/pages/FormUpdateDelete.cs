@@ -14,7 +14,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 {
     public partial class FormUpdateDelete : Form
     {
-        string data_source = "datasource=localhost; username=root; password=; database=reserva_laboratorio";
+        string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
 
         public FormUpdateDelete()
         {
@@ -91,7 +91,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                         reader["id_reserva"].ToString(),
                         reader["nome_utilizador"].ToString(),
                         reader["evento"].ToString(),
-                        reader["data_reserva"].ToString(),
+                        Convert.ToDateTime(reader["data_reserva"]).ToString("yyyy-MM-dd"),
                         reader["horario"].ToString()
                         );
                         
@@ -105,6 +105,12 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             if (dGrdView.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Selecione uma reserva para atualizar.");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Você tem certeza que deseja atualizar esta reserva?", "Confirmar Atualização", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
                 return;
             }
 
@@ -142,6 +148,12 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             if (dGrdView.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Selecione uma reserva para excluir.");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Você tem certeza que deseja excluir esta reserva?", "Confirmar Atualização", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
                 return;
             }
 
@@ -205,6 +217,8 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             txtEvento.Clear();
             dtData.ResetText();
             mskHorario.Clear();
+            dGrdView.Rows.Clear();
+
         }
     }
     }
