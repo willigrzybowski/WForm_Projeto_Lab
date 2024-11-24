@@ -57,5 +57,10 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
             FormUpdateDelete fUpdateDel = new FormUpdateDelete();
             fUpdateDel.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

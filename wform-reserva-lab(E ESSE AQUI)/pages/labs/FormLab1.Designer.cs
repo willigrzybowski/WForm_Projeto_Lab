@@ -37,31 +37,34 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnReservar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnReserva = new System.Windows.Forms.Button();
             this.lblReserva = new System.Windows.Forms.Label();
             this.dtData = new System.Windows.Forms.DateTimePicker();
             this.mskHorario = new System.Windows.Forms.MaskedTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUtilizador
             // 
             this.lblUtilizador.AutoSize = true;
-            this.lblUtilizador.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUtilizador.Location = new System.Drawing.Point(211, 166);
+            this.lblUtilizador.BackColor = System.Drawing.Color.Transparent;
+            this.lblUtilizador.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUtilizador.Location = new System.Drawing.Point(121, 266);
             this.lblUtilizador.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblUtilizador.Name = "lblUtilizador";
-            this.lblUtilizador.Size = new System.Drawing.Size(145, 18);
+            this.lblUtilizador.Size = new System.Drawing.Size(191, 22);
             this.lblUtilizador.TabIndex = 0;
             this.lblUtilizador.Text = "Nome do Utilizador:";
             // 
             // lblHorario
             // 
             this.lblHorario.AutoSize = true;
-            this.lblHorario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorario.Location = new System.Drawing.Point(211, 273);
+            this.lblHorario.BackColor = System.Drawing.Color.Transparent;
+            this.lblHorario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblHorario.Location = new System.Drawing.Point(121, 413);
             this.lblHorario.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblHorario.Name = "lblHorario";
-            this.lblHorario.Size = new System.Drawing.Size(64, 18);
+            this.lblHorario.Size = new System.Drawing.Size(86, 22);
             this.lblHorario.TabIndex = 4;
             this.lblHorario.Text = "Horário:";
             this.lblHorario.Click += new System.EventHandler(this.lblHorario_Click);
@@ -69,11 +72,12 @@
             // lblEvento
             // 
             this.lblEvento.AutoSize = true;
-            this.lblEvento.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEvento.Location = new System.Drawing.Point(679, 218);
+            this.lblEvento.BackColor = System.Drawing.Color.Transparent;
+            this.lblEvento.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblEvento.Location = new System.Drawing.Point(573, 340);
             this.lblEvento.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEvento.Name = "lblEvento";
-            this.lblEvento.Size = new System.Drawing.Size(60, 18);
+            this.lblEvento.Size = new System.Drawing.Size(82, 22);
             this.lblEvento.TabIndex = 5;
             this.lblEvento.Text = "Evento:";
             this.lblEvento.Click += new System.EventHandler(this.label6_Click);
@@ -81,86 +85,84 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(211, 223);
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblData.Location = new System.Drawing.Point(122, 339);
             this.lblData.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(46, 18);
+            this.lblData.Size = new System.Drawing.Size(59, 22);
             this.lblData.TabIndex = 6;
             this.lblData.Text = "Data:";
             this.lblData.Click += new System.EventHandler(this.lblData_Click);
             // 
             // txtEvento
             // 
-            this.txtEvento.Location = new System.Drawing.Point(747, 215);
+            this.txtEvento.Location = new System.Drawing.Point(663, 336);
             this.txtEvento.Name = "txtEvento";
-            this.txtEvento.Size = new System.Drawing.Size(407, 26);
+            this.txtEvento.Size = new System.Drawing.Size(570, 26);
             this.txtEvento.TabIndex = 10;
             // 
             // txtUtilizador
             // 
-            this.txtUtilizador.Location = new System.Drawing.Point(444, 158);
+            this.txtUtilizador.Location = new System.Drawing.Point(320, 262);
             this.txtUtilizador.Name = "txtUtilizador";
-            this.txtUtilizador.Size = new System.Drawing.Size(710, 26);
+            this.txtUtilizador.Size = new System.Drawing.Size(913, 26);
             this.txtUtilizador.TabIndex = 14;
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(125, 552);
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
+            this.btnLimpar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(383, 608);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(244, 74);
+            this.btnLimpar.Size = new System.Drawing.Size(164, 53);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnReservar
             // 
-            this.btnReservar.Location = new System.Drawing.Point(513, 552);
+            this.btnReservar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
+            this.btnReservar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservar.Location = new System.Drawing.Point(604, 608);
             this.btnReservar.Name = "btnReservar";
-            this.btnReservar.Size = new System.Drawing.Size(244, 74);
+            this.btnReservar.Size = new System.Drawing.Size(164, 53);
             this.btnReservar.TabIndex = 16;
             this.btnReservar.Text = "Reservar";
-            this.btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.UseVisualStyleBackColor = false;
             this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(910, 552);
+            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
+            this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(827, 608);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(244, 74);
+            this.btnSair.Size = new System.Drawing.Size(164, 53);
             this.btnSair.TabIndex = 17;
             this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // btnReserva
-            // 
-            this.btnReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnReserva.Location = new System.Drawing.Point(342, 95);
-            this.btnReserva.Name = "btnReserva";
-            this.btnReserva.Size = new System.Drawing.Size(51, 37);
-            this.btnReserva.TabIndex = 31;
-            this.btnReserva.Text = ">";
-            this.btnReserva.UseVisualStyleBackColor = false;
-            this.btnReserva.Click += new System.EventHandler(this.btnReserva_Click);
             // 
             // lblReserva
             // 
             this.lblReserva.AutoSize = true;
-            this.lblReserva.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReserva.Location = new System.Drawing.Point(210, 99);
+            this.lblReserva.BackColor = System.Drawing.Color.Transparent;
+            this.lblReserva.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReserva.Location = new System.Drawing.Point(182, 166);
             this.lblReserva.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblReserva.Name = "lblReserva";
-            this.lblReserva.Size = new System.Drawing.Size(86, 22);
+            this.lblReserva.Size = new System.Drawing.Size(141, 37);
             this.lblReserva.TabIndex = 30;
             this.lblReserva.Text = "Reserva\r\n";
+            this.lblReserva.Click += new System.EventHandler(this.lblReserva_Click);
             // 
             // dtData
             // 
             this.dtData.CustomFormat = "yyyy/MM/dd";
             this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtData.Location = new System.Drawing.Point(288, 217);
+            this.dtData.Location = new System.Drawing.Point(189, 336);
             this.dtData.Name = "dtData";
             this.dtData.Size = new System.Drawing.Size(350, 26);
             this.dtData.TabIndex = 33;
@@ -169,20 +171,34 @@
             // 
             // mskHorario
             // 
-            this.mskHorario.Location = new System.Drawing.Point(310, 270);
+            this.mskHorario.Location = new System.Drawing.Point(215, 409);
             this.mskHorario.Mask = "00:00";
             this.mskHorario.Name = "mskHorario";
-            this.mskHorario.Size = new System.Drawing.Size(46, 26);
+            this.mskHorario.Size = new System.Drawing.Size(247, 26);
             this.mskHorario.TabIndex = 35;
+            this.mskHorario.ValidatingType = typeof(System.DateTime);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.seta2;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(121, 163);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 44);
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
             // 
             // hrReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoFazerReserva3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1364, 749);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mskHorario);
             this.Controls.Add(this.dtData);
-            this.Controls.Add(this.btnReserva);
             this.Controls.Add(this.lblReserva);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnReservar);
@@ -193,12 +209,14 @@
             this.Controls.Add(this.lblEvento);
             this.Controls.Add(this.lblHorario);
             this.Controls.Add(this.lblUtilizador);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "hrReserva";
             this.Text = "Lab1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormLab1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,9 +233,10 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnReservar;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Button btnReserva;
         private System.Windows.Forms.Label lblReserva;
         private System.Windows.Forms.DateTimePicker dtData;
         private System.Windows.Forms.MaskedTextBox mskHorario;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox FundoVerde;
     }
 }

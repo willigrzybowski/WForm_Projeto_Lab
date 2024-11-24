@@ -25,7 +25,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
             
         }
         
-        private void FormLab1_Load(object sender, EventArgs e)
+        public void FormLab1_Load(object sender, EventArgs e)
         {
             if (numero == 1)
             {
@@ -92,63 +92,83 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
         private void btnReservar_Click(object sender, EventArgs e)
         {
-                string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
+            string data_source = "datasource=localhost; username=root; password=; database=projetomagalilabs";
 
-                using (MySqlConnection connection = new MySqlConnection(data_source))
+            using (MySqlConnection connection = new MySqlConnection(data_source))
+            {
+                try
                 {
-                    try
+                    connection.Open();
+
+                    // Determina a tabela a ser usada com base no laboratório selecionado
+                    string tabela = "";
+                    if (numero == 1) tabela = "tb_rlab1";
+                    if (numero == 2) tabela = "tb_rlab2";
+                    if (numero == 3) tabela = "tb_rlab3";
+                    if (numero == 4) tabela = "tb_rauditorio";
+                    if (numero == 5) tabela = "tb_rsala_maker";
+                    if (numero == 6) tabela = "tb_rsiberia";
+                    if (numero == 7) tabela = "tb_rlab_quimica";
+
+                    // Limpa qualquer espaço extra no horário
+                    string horarioLimpo = mskHorario.Text.Trim();
+
+                    // Verificação de conflitos na reserva
+                    string verificationSql = "SELECT COUNT(*) FROM " + tabela + " WHERE horario = @horario AND data_reserva = @data_reserva";
+
+                    using (MySqlCommand verification = new MySqlCommand(verificationSql, connection))
                     {
-                        connection.Open();
+                        verification.Parameters.AddWithValue("@horario", horarioLimpo); // Usando o horário limpo
+                        verification.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd")); // Convertendo data para o formato correto
 
-                        string verificationSql = "SELECT COUNT(*) FROM tb_rlab1 WHERE nome_utilizador = @nome_utilizador AND horario = @horario AND data_reserva = @data_reserva";
+                        // Depuração para verificar os valores passados
+                        MessageBox.Show($"Verificando: Horário = {horarioLimpo}, Data = {dtData.Value.ToString("yyyy-MM-dd")}");
 
-                        using (MySqlCommand verification = new MySqlCommand(verificationSql, connection))
+                        int count = Convert.ToInt32(verification.ExecuteScalar()); // Executa a contagem de reservas existentes
+
+                        // Se já houver uma reserva para o mesmo horário e data, mostra a mensagem de erro
+                        if (count > 0)
                         {
-                            verification.Parameters.AddWithValue("@nome_utilizador", txtUtilizador.Text);
-                            verification.Parameters.AddWithValue("@horario", mskHorario.Text);
-                            verification.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
-
-                            int count = Convert.ToInt32(verification.ExecuteScalar());
-
-                            if (count > 0)
-                            {
-                                MessageBox.Show("Já existe uma reserva com este nome e horário!");
-                                return;
-                            }
-
-                            else 
-                            {
-                            string insertSql = "INSERT INTO tb_rlab1(nome_utilizador, evento, data_reserva, horario) VALUES (@nome_utilizador, @evento, @data_reserva, @horario)";
+                            MessageBox.Show("Já existe uma reserva para esse horário e data no laboratório selecionado!");
+                            return;
+                        }
+                        else
+                        {
+                            // Caso não haja conflito, insere a nova reserva
+                            string insertSql = "INSERT INTO " + tabela + "(nome_utilizador, evento, data_reserva, horario) VALUES (@nome_utilizador, @evento, @data_reserva, @horario)";
 
                             using (MySqlCommand command = new MySqlCommand(insertSql, connection))
                             {
                                 command.Parameters.AddWithValue("@nome_utilizador", txtUtilizador.Text);
                                 command.Parameters.AddWithValue("@evento", txtEvento.Text);
                                 command.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
-                                command.Parameters.AddWithValue("@horario", mskHorario.Text);
+                                command.Parameters.AddWithValue("@horario", horarioLimpo);
 
-                                command.ExecuteNonQuery();
+                                command.ExecuteNonQuery(); // Executa a inserção no banco de dados
                             }
 
+                            // Mostra a mensagem de sucesso
                             MessageBox.Show("Reserva feita com sucesso!");
-                            }
                         }
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Erro: " + ex.Message);
-                    }
-                    finally
-                    {
-                        if (connection.State == ConnectionState.Open)
-                        {
-                            connection.Close();
-                        }
-                    
                     }
                 }
+                catch (Exception ex)
+                {
+                    // Exibe erros que possam ocorrer durante a execução do código
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+                finally
+                {
+                    // Fecha a conexão com o banco de dados caso ela esteja aberta
+                    if (connection.State == ConnectionState.Open)
+                    {
+                        connection.Close();
+                    }
+                }
+            }
         }
+
+
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -241,6 +261,16 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void lblReserva_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

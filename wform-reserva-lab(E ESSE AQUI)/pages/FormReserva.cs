@@ -68,5 +68,70 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
             hrReserva fLab = new hrReserva(3);
             fLab.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLab7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLab6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLab5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLab3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLab2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }
