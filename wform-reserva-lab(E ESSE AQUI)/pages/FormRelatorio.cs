@@ -94,47 +94,48 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
                     {
                         case "Todos":
                             query = @"
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
-                             FROM tb_rlab1 WHERE " + dataFiltro + @"
-                             UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
-                             FROM tb_rlab2 WHERE " + dataFiltro + @"
-                             UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
-                             FROM tb_rlab3 WHERE " + dataFiltro + @"
-                             UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
-                             FROM tb_rSiberia WHERE " + dataFiltro + @"
-                             UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local 
-                             FROM tb_rSalaMaker WHERE " + dataFiltro + @"
-                             UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local 
-                             FROM tb_rAuditorio WHERE " + dataFiltro + @"
-                             UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local 
-                             FROM tb_rLabQuimica WHERE " + dataFiltro;
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rlab1 WHERE " + dataFiltro + @"
+                            UNION ALL
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rlab2 WHERE " + dataFiltro + @"
+                            UNION ALL
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rlab3 WHERE " + dataFiltro + @"
+                            UNION ALL
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rSiberia WHERE " + dataFiltro + @"
+                            UNION ALL
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rSalaMaker WHERE " + dataFiltro + @"
+                            UNION ALL
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rAuditorio WHERE " + dataFiltro + @"
+                            UNION ALL
+                            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final
+                            FROM tb_rLabQuimica WHERE " + dataFiltro;
+
                             break;
                         case "Laboratório 1":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rlab1 WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab1 WHERE " + dataFiltro;
                             break;
                         case "Laboratório 2":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rlab2 WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab2 WHERE " + dataFiltro;
                             break;
                         case "Laboratório 3":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rlab3 WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab3 WHERE " + dataFiltro;
                             break;
                         case "Sibéria":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_localo FROM tb_rSiberia WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rsiberia WHERE " + dataFiltro;
                             break;
                         case "Sala Maker":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rSalaMaker WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rsalamaker WHERE " + dataFiltro;
                             break;
                         case "Auditório":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rAuditorio WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rauditorio WHERE " + dataFiltro;
                             break;
                         case "Laboratório de Química":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rLabQuimica WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlabquimica WHERE " + dataFiltro;
                             break;
                         default:
                             MessageBox.Show("Tabela não encontrada.");
@@ -146,6 +147,10 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
                     dataAdapter.Fill(dataTable);
 
                     dGrdView.DataSource = dataTable;
+
+                    dGrdView.Columns["horario_final"].HeaderText = "Horário Final";
+                    dGrdView.Columns["horario_final"].Width = 100;
+
 
 
                 }
@@ -197,5 +202,6 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
         {
 
         }
+
     }
 }

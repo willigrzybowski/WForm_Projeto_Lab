@@ -41,6 +41,8 @@
             this.dtData = new System.Windows.Forms.DateTimePicker();
             this.mskHorario = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mskHorarioFinal = new System.Windows.Forms.MaskedTextBox();
+            this.lblHorarioFinal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -189,6 +191,29 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
+            // mskHorarioFinal
+            // 
+            this.mskHorarioFinal.Location = new System.Drawing.Point(986, 413);
+            this.mskHorarioFinal.Mask = "00:00";
+            this.mskHorarioFinal.Name = "mskHorarioFinal";
+            this.mskHorarioFinal.Size = new System.Drawing.Size(247, 26);
+            this.mskHorarioFinal.TabIndex = 39;
+            this.mskHorarioFinal.ValidatingType = typeof(System.DateTime);
+            this.mskHorarioFinal.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // lblHorarioFinal
+            // 
+            this.lblHorarioFinal.AutoSize = true;
+            this.lblHorarioFinal.BackColor = System.Drawing.Color.Transparent;
+            this.lblHorarioFinal.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblHorarioFinal.Location = new System.Drawing.Point(842, 417);
+            this.lblHorarioFinal.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblHorarioFinal.Name = "lblHorarioFinal";
+            this.lblHorarioFinal.Size = new System.Drawing.Size(136, 22);
+            this.lblHorarioFinal.TabIndex = 38;
+            this.lblHorarioFinal.Text = "Horário Final:";
+            this.lblHorarioFinal.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // hrReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -196,6 +221,8 @@
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoFazerReserva3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1364, 749);
+            this.Controls.Add(this.mskHorarioFinal);
+            this.Controls.Add(this.lblHorarioFinal);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mskHorario);
             this.Controls.Add(this.dtData);
@@ -238,5 +265,7 @@
         private System.Windows.Forms.MaskedTextBox mskHorario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox FundoVerde;
+        private System.Windows.Forms.MaskedTextBox mskHorarioFinal;
+        private System.Windows.Forms.Label lblHorarioFinal;
     }
 }

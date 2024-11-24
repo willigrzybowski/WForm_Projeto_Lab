@@ -47,6 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblLocal = new System.Windows.Forms.Label();
             this.txtLocal = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.mskHorarioFinal = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGrdView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +100,7 @@
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnAtualizar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAtualizar.Location = new System.Drawing.Point(343, 600);
+            this.btnAtualizar.Location = new System.Drawing.Point(343, 567);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(110, 46);
             this.btnAtualizar.TabIndex = 34;
@@ -138,7 +140,7 @@
             // 
             // txtEvento
             // 
-            this.txtEvento.Location = new System.Drawing.Point(123, 495);
+            this.txtEvento.Location = new System.Drawing.Point(122, 501);
             this.txtEvento.Name = "txtEvento";
             this.txtEvento.Size = new System.Drawing.Size(330, 20);
             this.txtEvento.TabIndex = 38;
@@ -182,7 +184,7 @@
             this.lblEvento.AutoSize = true;
             this.lblEvento.BackColor = System.Drawing.Color.Transparent;
             this.lblEvento.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblEvento.Location = new System.Drawing.Point(45, 495);
+            this.lblEvento.Location = new System.Drawing.Point(44, 501);
             this.lblEvento.Name = "lblEvento";
             this.lblEvento.Size = new System.Drawing.Size(69, 19);
             this.lblEvento.TabIndex = 42;
@@ -242,7 +244,7 @@
             this.lblLocal.AutoSize = true;
             this.lblLocal.BackColor = System.Drawing.Color.Transparent;
             this.lblLocal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLocal.Location = new System.Drawing.Point(45, 540);
+            this.lblLocal.Location = new System.Drawing.Point(45, 527);
             this.lblLocal.Name = "lblLocal";
             this.lblLocal.Size = new System.Drawing.Size(57, 19);
             this.lblLocal.TabIndex = 48;
@@ -250,11 +252,31 @@
             // 
             // txtLocal
             // 
-            this.txtLocal.Location = new System.Drawing.Point(123, 540);
+            this.txtLocal.Location = new System.Drawing.Point(123, 527);
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(330, 20);
             this.txtLocal.TabIndex = 47;
             this.txtLocal.TextChanged += new System.EventHandler(this.txtLocal_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(44, 474);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 19);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Final:";
+            // 
+            // mskHorarioFinal
+            // 
+            this.mskHorarioFinal.Location = new System.Drawing.Point(122, 475);
+            this.mskHorarioFinal.Mask = "00:00";
+            this.mskHorarioFinal.Name = "mskHorarioFinal";
+            this.mskHorarioFinal.Size = new System.Drawing.Size(330, 20);
+            this.mskHorarioFinal.TabIndex = 49;
+            this.mskHorarioFinal.ValidatingType = typeof(System.DateTime);
             // 
             // FormUpdateDelete
             // 
@@ -263,6 +285,8 @@
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.ReservaCRUD;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.mskHorarioFinal);
             this.Controls.Add(this.lblLocal);
             this.Controls.Add(this.txtLocal);
             this.Controls.Add(this.label2);
@@ -314,5 +338,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblLocal;
         private System.Windows.Forms.TextBox txtLocal;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox mskHorarioFinal;
     }
 }
