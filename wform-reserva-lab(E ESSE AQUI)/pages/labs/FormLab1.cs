@@ -100,66 +100,66 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
                 {
                     connection.Open();
 
-                    // Determina a tabela a ser usada com base no laboratório selecionado
                     string tabela = "";
                     if (numero == 1) tabela = "tb_rlab1";
                     if (numero == 2) tabela = "tb_rlab2";
                     if (numero == 3) tabela = "tb_rlab3";
                     if (numero == 4) tabela = "tb_rauditorio";
-                    if (numero == 5) tabela = "tb_rsala_maker";
+                    if (numero == 5) tabela = "tb_rsalamaker";
                     if (numero == 6) tabela = "tb_rsiberia";
-                    if (numero == 7) tabela = "tb_rlab_quimica";
+                    if (numero == 7) tabela = "tb_rlabquimica";
 
-                    // Limpa qualquer espaço extra no horário
                     string horarioLimpo = mskHorario.Text.Trim();
 
-                    // Verificação de conflitos na reserva
-                    string verificationSql = "SELECT COUNT(*) FROM " + tabela + " WHERE horario = @horario AND data_reserva = @data_reserva";
+                    string verificationSql = "SELECT COUNT(*) FROM " + tabela +
+                                             " WHERE data_reserva = @data_reserva AND " +
+                                             "((@horario BETWEEN horario AND horario_final) OR " +
+                                             "(@horario_final BETWEEN horario AND horario_final) OR " +
+                                             "(horario BETWEEN @horario AND @horario_final))";
 
                     using (MySqlCommand verification = new MySqlCommand(verificationSql, connection))
                     {
-                        verification.Parameters.AddWithValue("@horario", horarioLimpo); // Usando o horário limpo
-                        verification.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd")); // Convertendo data para o formato correto
+                        verification.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
+                        verification.Parameters.AddWithValue("@horario", mskHorario.Text.Trim());
+                        verification.Parameters.AddWithValue("@horario_final", mskHorarioFinal.Text.Trim());
 
-                        // Depuração para verificar os valores passados
-                        MessageBox.Show($"Verificando: Horário = {horarioLimpo}, Data = {dtData.Value.ToString("yyyy-MM-dd")}");
+                        int count = Convert.ToInt32(verification.ExecuteScalar());
 
-                        int count = Convert.ToInt32(verification.ExecuteScalar()); // Executa a contagem de reservas existentes
-
-                        // Se já houver uma reserva para o mesmo horário e data, mostra a mensagem de erro
                         if (count > 0)
                         {
-                            MessageBox.Show("Já existe uma reserva para esse horário e data no laboratório selecionado!");
+                            MessageBox.Show("Já existe uma reserva para esse intervalo de horário no laboratório selecionado!");
+                            Limpar();
                             return;
                         }
+
                         else
-                        {
-                            // Caso não haja conflito, insere a nova reserva
-                            string insertSql = "INSERT INTO " + tabela + "(nome_utilizador, evento, data_reserva, horario) VALUES (@nome_utilizador, @evento, @data_reserva, @horario)";
+                    {
+                            string insertSql = "INSERT INTO " + tabela + "(nome_utilizador, evento, data_reserva, horario, horario_final, nome_local) " +
+                    "VALUES (@nome_utilizador, @evento, @data_reserva, @horario, @nome_local, @horario_final)";
 
                             using (MySqlCommand command = new MySqlCommand(insertSql, connection))
                             {
                                 command.Parameters.AddWithValue("@nome_utilizador", txtUtilizador.Text);
                                 command.Parameters.AddWithValue("@evento", txtEvento.Text);
                                 command.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
-                                command.Parameters.AddWithValue("@horario", horarioLimpo);
+                                command.Parameters.AddWithValue("@horario", mskHorario.Text.Trim());
+                                command.Parameters.AddWithValue("@nome_local", nome_laboratorio);
+                                command.Parameters.AddWithValue("@horario_final", mskHorarioFinal.Text.Trim());
 
-                                command.ExecuteNonQuery(); // Executa a inserção no banco de dados
+                                command.ExecuteNonQuery();
                             }
 
-                            // Mostra a mensagem de sucesso
                             MessageBox.Show("Reserva feita com sucesso!");
+
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Exibe erros que possam ocorrer durante a execução do código
                     MessageBox.Show("Erro: " + ex.Message);
                 }
                 finally
                 {
-                    // Fecha a conexão com o banco de dados caso ela esteja aberta
                     if (connection.State == ConnectionState.Open)
                     {
                         connection.Close();
@@ -222,10 +222,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtEvento.Text = string.Empty;
-            txtUtilizador.Text = string.Empty;
-            mskHorario.Text = string.Empty;
-            dtData.Value = DateTime.Now;
+            Limpar();
         }
 
         private void btnReserva_Click(object sender, EventArgs e)
@@ -244,6 +241,16 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
             txtUtilizador.Show();
 
         }
+
+        public void Limpar()
+        {
+            txtEvento.Text = string.Empty;
+            txtUtilizador.Text = string.Empty;
+            mskHorario.Text = string.Empty;
+            mskHorarioFinal.Text = string.Empty;
+            dtData.Value = DateTime.Now;
+        }
+
 
         private void lblData_Click(object sender, EventArgs e)
         {
@@ -271,6 +278,16 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

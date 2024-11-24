@@ -32,7 +32,9 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             dGrdView.Columns.Add("nome_utilizador", "Nome do Utilizador");
             dGrdView.Columns.Add("evento", "Evento");
             dGrdView.Columns.Add("data_reserva", "Data Reserva");
-            dGrdView.Columns.Add("horario", "Horário");
+            dGrdView.Columns.Add("horario", "Início");
+            dGrdView.Columns.Add("nome_local", "Local");
+            dGrdView.Columns.Add("horario_final", "Final");
 
         }
 
@@ -50,33 +52,33 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                 txtEvento.Text = selectedRow.Cells["evento"].Value.ToString();
                 dtData.Text = selectedRow.Cells["data_reserva"].Value.ToString();
                 mskHorario.Text = selectedRow.Cells["horario"].Value.ToString();
+                txtLocal.Text = selectedRow.Cells["nome_local"].Value.ToString();
+                mskHorarioFinal.Text = selectedRow.Cells["horario_final"].Value.ToString();
 
             }
         }
 
         private void RefreshDataGridView()
         {
-            // Limpa todas as linhas da DataGridView
             dGrdView.Rows.Clear();
 
-            // Recarrega os dados atualizados
             using (MySqlConnection connection = new MySqlConnection(data_source))
             {
                 connection.Open();
                 string query = @"
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab1
-            UNION ALL
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab2
-            UNION ALL
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab3
-            UNION ALL
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsiberia
-            UNION ALL
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsalamaker
-            UNION ALL
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rauditorio
-            UNION ALL
-            SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlabquimica";
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab1
+        UNION ALL
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab2
+        UNION ALL
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab3
+        UNION ALL
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rsiberia
+        UNION ALL
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rsalamaker
+        UNION ALL
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rauditorio
+        UNION ALL
+        SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlabquimica";
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 MySqlDataReader reader = cmd.ExecuteReader();
@@ -88,7 +90,9 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                         reader["nome_utilizador"].ToString(),
                         reader["evento"].ToString(),
                         Convert.ToDateTime(reader["data_reserva"]).ToString("yyyy-MM-dd"),
-                        reader["horario"].ToString()
+                        reader["horario"].ToString(),
+                        reader["nome_local"].ToString(),
+                        reader["horario_final"].ToString()
                     );
                 }
             }
@@ -106,19 +110,19 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             {
                 connection.Open();
                 string query = @"
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab1 WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab1 WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab2 WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab2 WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab3 WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlab3 WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsiberia WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rsiberia WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rsalamaker WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rsalamaker WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rauditorio WHERE nome_utilizador LIKE @nome_utilizador
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rauditorio WHERE nome_utilizador LIKE @nome_utilizador
                     UNION ALL
-                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlabquimica WHERE nome_utilizador LIKE @nome_utilizador";
+                    SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local, horario_final FROM tb_rlabquimica WHERE nome_utilizador LIKE @nome_utilizador";
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
@@ -135,7 +139,9 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                         reader["nome_utilizador"].ToString(),
                         reader["evento"].ToString(),
                         Convert.ToDateTime(reader["data_reserva"]).ToString("yyyy-MM-dd"),
-                        reader["horario"].ToString()
+                        reader["horario"].ToString(),
+                        reader["nome_local"].ToString(),
+                        reader["horario_final"].ToString()
                         );
                 }
             }
@@ -157,7 +163,6 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             }
 
             DataGridViewRow selectedRow = dGrdView.SelectedRows[0];
-
             int idReserva = Convert.ToInt32(selectedRow.Cells["id_reserva"].Value);
             string tabela = GetTabelaByIdReserva(idReserva);
 
@@ -168,35 +173,34 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             }
 
             string horario = mskHorario.Text;
+            string horarioFinal = mskHorarioFinal.Text;  // Novo campo para horário final
 
-            if (horario.Length == 5)
+            if (horario.Length == 5 && horarioFinal.Length == 5)
             {
+                using (MySqlConnection connection = new MySqlConnection(data_source))
+                {
+                    connection.Open();
+                    string query = $"UPDATE `{tabela}` SET `nome_utilizador` = @nome_utilizador, `evento` = @evento, `data_reserva` = @data_reserva, `horario` = @horario, `nome_local` = @nome_local, `horario_final` = @horario_final WHERE `id_reserva` = @id_reserva";
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
 
+                    cmd.Parameters.AddWithValue("@nome_utilizador", txtNomeUti.Text);
+                    cmd.Parameters.AddWithValue("@evento", txtEvento.Text);
+                    cmd.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
+                    cmd.Parameters.AddWithValue("@horario", mskHorario.Text);
+                    cmd.Parameters.AddWithValue("@id_reserva", idReserva);
+                    cmd.Parameters.AddWithValue("@nome_local", txtLocal.Text);
+                    cmd.Parameters.AddWithValue("@horario_final", mskHorarioFinal.Text);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Reserva atualizada com sucesso!");
+                }
+                RefreshDataGridView();
             }
             else
             {
                 MessageBox.Show("Formato de horário inválido. Use HH:mm (exemplo: 14:30).");
                 return;
             }
-
-            using (MySqlConnection connection = new MySqlConnection(data_source))
-            {
-                connection.Open();
-                string query = $"UPDATE {tabela} SET nome_utilizador = @nome_utilizador, evento = @evento, data_reserva = @data_reserva, horario = @horario WHERE id_reserva = @id_reserva";
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-
-                cmd.Parameters.AddWithValue("@nome_utilizador", txtNomeUti.Text);
-                cmd.Parameters.AddWithValue("@evento", txtEvento.Text);
-                cmd.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
-                cmd.Parameters.AddWithValue("@horario", mskHorario.Text);
-                cmd.Parameters.AddWithValue("@id_reserva", idReserva);
-
-
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Reserva atualizada com sucesso!");
-
-            }
-            RefreshDataGridView();
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -232,8 +236,8 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Reserva deletada com sucesso!");
-
             }
+            RefreshDataGridView();
         }
 
         private string GetTabelaByIdReserva(int idReserva)
@@ -293,6 +297,11 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
         }
 
         private void lblHorario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLocal_TextChanged(object sender, EventArgs e)
         {
 
         }

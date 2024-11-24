@@ -43,13 +43,6 @@
             this.lblLab5 = new System.Windows.Forms.Label();
             this.lblLab6 = new System.Windows.Forms.Label();
             this.lblLab7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -175,7 +168,7 @@
             // 
             this.lblLab1.AutoSize = true;
             this.lblLab1.BackColor = System.Drawing.SystemColors.Control;
-            this.lblLab1.Location = new System.Drawing.Point(320, 343);
+            this.lblLab1.Location = new System.Drawing.Point(321, 349);
             this.lblLab1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab1.Name = "lblLab1";
             this.lblLab1.Size = new System.Drawing.Size(69, 13);
@@ -186,7 +179,7 @@
             // lblLab2
             // 
             this.lblLab2.AutoSize = true;
-            this.lblLab2.Location = new System.Drawing.Point(548, 343);
+            this.lblLab2.Location = new System.Drawing.Point(549, 349);
             this.lblLab2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab2.Name = "lblLab2";
             this.lblLab2.Size = new System.Drawing.Size(69, 13);
@@ -197,7 +190,7 @@
             // lblLab3
             // 
             this.lblLab3.AutoSize = true;
-            this.lblLab3.Location = new System.Drawing.Point(766, 343);
+            this.lblLab3.Location = new System.Drawing.Point(767, 349);
             this.lblLab3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab3.Name = "lblLab3";
             this.lblLab3.Size = new System.Drawing.Size(69, 13);
@@ -208,7 +201,7 @@
             // lblLab4
             // 
             this.lblLab4.AutoSize = true;
-            this.lblLab4.Location = new System.Drawing.Point(1005, 343);
+            this.lblLab4.Location = new System.Drawing.Point(1006, 349);
             this.lblLab4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab4.Name = "lblLab4";
             this.lblLab4.Size = new System.Drawing.Size(48, 13);
@@ -218,7 +211,7 @@
             // lblLab5
             // 
             this.lblLab5.AutoSize = true;
-            this.lblLab5.Location = new System.Drawing.Point(445, 517);
+            this.lblLab5.Location = new System.Drawing.Point(446, 523);
             this.lblLab5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab5.Name = "lblLab5";
             this.lblLab5.Size = new System.Drawing.Size(61, 13);
@@ -229,7 +222,7 @@
             // lblLab6
             // 
             this.lblLab6.AutoSize = true;
-            this.lblLab6.Location = new System.Drawing.Point(673, 517);
+            this.lblLab6.Location = new System.Drawing.Point(674, 523);
             this.lblLab6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab6.Name = "lblLab6";
             this.lblLab6.Size = new System.Drawing.Size(39, 13);
@@ -240,89 +233,13 @@
             // lblLab7
             // 
             this.lblLab7.AutoSize = true;
-            this.lblLab7.Location = new System.Drawing.Point(862, 517);
+            this.lblLab7.Location = new System.Drawing.Point(863, 523);
             this.lblLab7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab7.Name = "lblLab7";
             this.lblLab7.Size = new System.Drawing.Size(118, 13);
             this.lblLab7.TabIndex = 15;
             this.lblLab7.Text = "Laboratório de Química";
             this.lblLab7.Click += new System.EventHandler(this.lblLab7_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(895, 537);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Disponível";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(664, 537);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Disponível";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(446, 537);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Disponível";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1000, 363);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Disponível";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(772, 363);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Disponível";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(554, 363);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Disponível";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(326, 363);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Disponível";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // btnSair
             // 
@@ -343,13 +260,6 @@
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoReservas;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.lblLab7);
             this.Controls.Add(this.lblLab6);
             this.Controls.Add(this.lblLab5);
@@ -393,13 +303,6 @@
         private System.Windows.Forms.Label lblLab5;
         private System.Windows.Forms.Label lblLab6;
         private System.Windows.Forms.Label lblLab7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnSair;
     }
 }
