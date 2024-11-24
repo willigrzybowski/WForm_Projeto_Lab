@@ -45,6 +45,8 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblLocal = new System.Windows.Forms.Label();
+            this.txtLocal = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGrdView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +98,7 @@
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnAtualizar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAtualizar.Location = new System.Drawing.Point(343, 561);
+            this.btnAtualizar.Location = new System.Drawing.Point(343, 600);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(110, 46);
             this.btnAtualizar.TabIndex = 34;
@@ -235,6 +237,25 @@
             this.label2.TabIndex = 46;
             this.label2.Text = "Novas informações";
             // 
+            // lblLocal
+            // 
+            this.lblLocal.AutoSize = true;
+            this.lblLocal.BackColor = System.Drawing.Color.Transparent;
+            this.lblLocal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.lblLocal.Location = new System.Drawing.Point(45, 540);
+            this.lblLocal.Name = "lblLocal";
+            this.lblLocal.Size = new System.Drawing.Size(57, 19);
+            this.lblLocal.TabIndex = 48;
+            this.lblLocal.Text = "Local:";
+            // 
+            // txtLocal
+            // 
+            this.txtLocal.Location = new System.Drawing.Point(123, 540);
+            this.txtLocal.Name = "txtLocal";
+            this.txtLocal.Size = new System.Drawing.Size(330, 20);
+            this.txtLocal.TabIndex = 47;
+            this.txtLocal.TextChanged += new System.EventHandler(this.txtLocal_TextChanged);
+            // 
             // FormUpdateDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +263,8 @@
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.ReservaCRUD;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lblLocal);
+            this.Controls.Add(this.txtLocal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
@@ -289,5 +312,7 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblLocal;
+        private System.Windows.Forms.TextBox txtLocal;
     }
 }

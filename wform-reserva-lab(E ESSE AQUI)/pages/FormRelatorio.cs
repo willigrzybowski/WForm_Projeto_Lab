@@ -94,47 +94,47 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
                     {
                         case "Todos":
                             query = @"
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
                              FROM tb_rlab1 WHERE " + dataFiltro + @"
                              UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
                              FROM tb_rlab2 WHERE " + dataFiltro + @"
                              UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
                              FROM tb_rlab3 WHERE " + dataFiltro + @"
                              UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local
                              FROM tb_rSiberia WHERE " + dataFiltro + @"
                              UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local 
                              FROM tb_rSalaMaker WHERE " + dataFiltro + @"
                              UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local 
                              FROM tb_rAuditorio WHERE " + dataFiltro + @"
                              UNION ALL
-                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario 
+                             SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local 
                              FROM tb_rLabQuimica WHERE " + dataFiltro;
                             break;
                         case "Laboratório 1":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab1 WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rlab1 WHERE " + dataFiltro;
                             break;
                         case "Laboratório 2":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab2 WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rlab2 WHERE " + dataFiltro;
                             break;
                         case "Laboratório 3":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rlab3 WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rlab3 WHERE " + dataFiltro;
                             break;
                         case "Sibéria":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rSiberia WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_localo FROM tb_rSiberia WHERE " + dataFiltro;
                             break;
                         case "Sala Maker":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rSalaMaker WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rSalaMaker WHERE " + dataFiltro;
                             break;
                         case "Auditório":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rAuditorio WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rAuditorio WHERE " + dataFiltro;
                             break;
                         case "Laboratório de Química":
-                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario FROM tb_rLabQuimica WHERE " + dataFiltro;
+                            query = "SELECT id_reserva, nome_utilizador, evento, data_reserva, horario, nome_local FROM tb_rLabQuimica WHERE " + dataFiltro;
                             break;
                         default:
                             MessageBox.Show("Tabela não encontrada.");

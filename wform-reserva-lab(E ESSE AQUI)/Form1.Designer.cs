@@ -104,7 +104,7 @@
             this.btnUpdateDelete.Name = "btnUpdateDelete";
             this.btnUpdateDelete.Size = new System.Drawing.Size(353, 63);
             this.btnUpdateDelete.TabIndex = 4;
-            this.btnUpdateDelete.Text = "   Reservas";
+            this.btnUpdateDelete.Text = "   Gerenciar Reservas";
             this.btnUpdateDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdateDelete.UseVisualStyleBackColor = false;
             this.btnUpdateDelete.Click += new System.EventHandler(this.btnUpdateDelete_Click);
