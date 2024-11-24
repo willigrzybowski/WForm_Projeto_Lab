@@ -134,7 +134,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages.labs
 
                         else
                     {
-                            string insertSql = "INSERT INTO " + tabela + "(nome_utilizador, evento, data_reserva, horario, horario_final, nome_local) " +
+                            string insertSql = "INSERT INTO " + tabela + "(nome_utilizador, evento, data_reserva, horario, nome_local, horario_final) " +
                     "VALUES (@nome_utilizador, @evento, @data_reserva, @horario, @nome_local, @horario_final)";
 
                             using (MySqlCommand command = new MySqlCommand(insertSql, connection))
