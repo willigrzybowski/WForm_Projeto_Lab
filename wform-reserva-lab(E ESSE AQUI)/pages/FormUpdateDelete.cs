@@ -52,7 +52,6 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
                 txtEvento.Text = selectedRow.Cells["evento"].Value.ToString();
                 dtData.Text = selectedRow.Cells["data_reserva"].Value.ToString();
                 mskHorario.Text = selectedRow.Cells["horario"].Value.ToString();
-                txtLocal.Text = selectedRow.Cells["nome_local"].Value.ToString();
                 mskHorarioFinal.Text = selectedRow.Cells["horario_final"].Value.ToString();
 
             }
@@ -173,22 +172,21 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
             }
 
             string horario = mskHorario.Text;
-            string horarioFinal = mskHorarioFinal.Text;  // Novo campo para horário final
+            string horarioFinal = mskHorarioFinal.Text;  
 
             if (horario.Length == 5 && horarioFinal.Length == 5)
             {
                 using (MySqlConnection connection = new MySqlConnection(data_source))
                 {
                     connection.Open();
-                    string query = $"UPDATE `{tabela}` SET `nome_utilizador` = @nome_utilizador, `evento` = @evento, `data_reserva` = @data_reserva, `horario` = @horario, `nome_local` = @nome_local, `horario_final` = @horario_final WHERE `id_reserva` = @id_reserva";
+                    string query = $"UPDATE `{tabela}` SET  `evento` = @evento, `data_reserva` = @data_reserva, `horario` = @horario, `horario_final` = @horario_final WHERE `id_reserva` = @id_reserva";
                     MySqlCommand cmd = new MySqlCommand(query, connection);
 
-                    cmd.Parameters.AddWithValue("@nome_utilizador", txtNomeUti.Text);
+                    
                     cmd.Parameters.AddWithValue("@evento", txtEvento.Text);
                     cmd.Parameters.AddWithValue("@data_reserva", dtData.Value.ToString("yyyy-MM-dd"));
                     cmd.Parameters.AddWithValue("@horario", mskHorario.Text);
                     cmd.Parameters.AddWithValue("@id_reserva", idReserva);
-                    cmd.Parameters.AddWithValue("@nome_local", txtLocal.Text);
                     cmd.Parameters.AddWithValue("@horario_final", mskHorarioFinal.Text);
 
                     cmd.ExecuteNonQuery();
@@ -302,6 +300,16 @@ namespace wform_reserva_lab_E_ESSE_AQUI_.pages
         }
 
         private void txtLocal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mskHorario_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void lblLocal_Click(object sender, EventArgs e)
         {
 
         }

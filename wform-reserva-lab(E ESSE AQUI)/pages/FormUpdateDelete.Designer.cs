@@ -43,21 +43,19 @@
             this.lblEvento = new System.Windows.Forms.Label();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblLocal = new System.Windows.Forms.Label();
-            this.txtLocal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.mskHorarioFinal = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dGrdView)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNomeUti
             // 
             this.txtNomeUti.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNomeUti.Location = new System.Drawing.Point(204, 200);
+            this.txtNomeUti.Location = new System.Drawing.Point(204, 184);
             this.txtNomeUti.Name = "txtNomeUti";
-            this.txtNomeUti.Size = new System.Drawing.Size(249, 26);
+            this.txtNomeUti.Size = new System.Drawing.Size(216, 26);
             this.txtNomeUti.TabIndex = 31;
             this.txtNomeUti.TextChanged += new System.EventHandler(this.txtNomeUti_TextChanged);
             // 
@@ -65,9 +63,9 @@
             // 
             this.dGrdView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(223)))), ((int)(((byte)(196)))));
             this.dGrdView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGrdView.Location = new System.Drawing.Point(496, 162);
+            this.dGrdView.Location = new System.Drawing.Point(456, 138);
             this.dGrdView.Name = "dGrdView";
-            this.dGrdView.Size = new System.Drawing.Size(845, 397);
+            this.dGrdView.Size = new System.Drawing.Size(792, 397);
             this.dGrdView.TabIndex = 26;
             this.dGrdView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGrdView_CellContentClick);
             // 
@@ -76,7 +74,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.Location = new System.Drawing.Point(819, 89);
+            this.lblTitulo.Location = new System.Drawing.Point(752, 79);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(240, 56);
@@ -88,9 +86,9 @@
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnDeletar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnDeletar.Location = new System.Drawing.Point(838, 586);
+            this.btnDeletar.Location = new System.Drawing.Point(788, 541);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(166, 61);
+            this.btnDeletar.Size = new System.Drawing.Size(148, 61);
             this.btnDeletar.TabIndex = 33;
             this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = false;
@@ -100,7 +98,7 @@
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnAtualizar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnAtualizar.Location = new System.Drawing.Point(343, 567);
+            this.btnAtualizar.Location = new System.Drawing.Point(309, 503);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(110, 46);
             this.btnAtualizar.TabIndex = 34;
@@ -112,7 +110,7 @@
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.Location = new System.Drawing.Point(343, 254);
+            this.btnBuscar.Location = new System.Drawing.Point(310, 216);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(110, 46);
             this.btnBuscar.TabIndex = 35;
@@ -124,25 +122,26 @@
             // 
             this.dtData.CustomFormat = "dd/MM/yyyy";
             this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtData.Location = new System.Drawing.Point(101, 402);
+            this.dtData.Location = new System.Drawing.Point(100, 347);
             this.dtData.Name = "dtData";
-            this.dtData.Size = new System.Drawing.Size(352, 20);
+            this.dtData.Size = new System.Drawing.Size(320, 20);
             this.dtData.TabIndex = 36;
             // 
             // mskHorario
             // 
-            this.mskHorario.Location = new System.Drawing.Point(123, 449);
+            this.mskHorario.Location = new System.Drawing.Point(122, 387);
             this.mskHorario.Mask = "00:00";
             this.mskHorario.Name = "mskHorario";
-            this.mskHorario.Size = new System.Drawing.Size(330, 20);
+            this.mskHorario.Size = new System.Drawing.Size(297, 20);
             this.mskHorario.TabIndex = 37;
             this.mskHorario.ValidatingType = typeof(System.DateTime);
+            this.mskHorario.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskHorario_MaskInputRejected);
             // 
             // txtEvento
             // 
-            this.txtEvento.Location = new System.Drawing.Point(122, 501);
+            this.txtEvento.Location = new System.Drawing.Point(121, 468);
             this.txtEvento.Name = "txtEvento";
-            this.txtEvento.Size = new System.Drawing.Size(330, 20);
+            this.txtEvento.Size = new System.Drawing.Size(298, 20);
             this.txtEvento.TabIndex = 38;
             // 
             // lblNome
@@ -150,7 +149,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblNome.Location = new System.Drawing.Point(45, 203);
+            this.lblNome.Location = new System.Drawing.Point(45, 187);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(159, 19);
             this.lblNome.TabIndex = 39;
@@ -161,7 +160,7 @@
             this.lblData.AutoSize = true;
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblData.Location = new System.Drawing.Point(45, 402);
+            this.lblData.Location = new System.Drawing.Point(44, 347);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(50, 19);
             this.lblData.TabIndex = 40;
@@ -172,7 +171,7 @@
             this.lblHorario.AutoSize = true;
             this.lblHorario.BackColor = System.Drawing.Color.Transparent;
             this.lblHorario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblHorario.Location = new System.Drawing.Point(45, 448);
+            this.lblHorario.Location = new System.Drawing.Point(44, 386);
             this.lblHorario.Name = "lblHorario";
             this.lblHorario.Size = new System.Drawing.Size(72, 19);
             this.lblHorario.TabIndex = 41;
@@ -184,7 +183,7 @@
             this.lblEvento.AutoSize = true;
             this.lblEvento.BackColor = System.Drawing.Color.Transparent;
             this.lblEvento.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblEvento.Location = new System.Drawing.Point(44, 501);
+            this.lblEvento.Location = new System.Drawing.Point(43, 468);
             this.lblEvento.Name = "lblEvento";
             this.lblEvento.Size = new System.Drawing.Size(69, 19);
             this.lblEvento.TabIndex = 42;
@@ -194,9 +193,9 @@
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnLimpar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLimpar.Location = new System.Drawing.Point(496, 585);
+            this.btnLimpar.Location = new System.Drawing.Point(455, 540);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(166, 61);
+            this.btnLimpar.Size = new System.Drawing.Size(148, 61);
             this.btnLimpar.TabIndex = 43;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
@@ -206,64 +205,32 @@
             // 
             this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSair.Location = new System.Drawing.Point(1175, 585);
+            this.btnSair.Location = new System.Drawing.Point(1100, 540);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(166, 61);
+            this.btnSair.Size = new System.Drawing.Size(148, 61);
             this.btnSair.TabIndex = 44;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(115, 135);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 37);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "Buscar reservas";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(94, 352);
+            this.label2.Location = new System.Drawing.Point(83, 284);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(311, 37);
             this.label2.TabIndex = 46;
             this.label2.Text = "Novas informações";
             // 
-            // lblLocal
-            // 
-            this.lblLocal.AutoSize = true;
-            this.lblLocal.BackColor = System.Drawing.Color.Transparent;
-            this.lblLocal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLocal.Location = new System.Drawing.Point(45, 527);
-            this.lblLocal.Name = "lblLocal";
-            this.lblLocal.Size = new System.Drawing.Size(57, 19);
-            this.lblLocal.TabIndex = 48;
-            this.lblLocal.Text = "Local:";
-            // 
-            // txtLocal
-            // 
-            this.txtLocal.Location = new System.Drawing.Point(123, 527);
-            this.txtLocal.Name = "txtLocal";
-            this.txtLocal.Size = new System.Drawing.Size(330, 20);
-            this.txtLocal.TabIndex = 47;
-            this.txtLocal.TextChanged += new System.EventHandler(this.txtLocal_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(44, 474);
+            this.label3.Location = new System.Drawing.Point(44, 427);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 19);
             this.label3.TabIndex = 50;
@@ -271,12 +238,25 @@
             // 
             // mskHorarioFinal
             // 
-            this.mskHorarioFinal.Location = new System.Drawing.Point(122, 475);
+            this.mskHorarioFinal.Location = new System.Drawing.Point(122, 428);
             this.mskHorarioFinal.Mask = "00:00";
             this.mskHorarioFinal.Name = "mskHorarioFinal";
-            this.mskHorarioFinal.Size = new System.Drawing.Size(330, 20);
+            this.mskHorarioFinal.Size = new System.Drawing.Size(298, 20);
             this.mskHorarioFinal.TabIndex = 49;
             this.mskHorarioFinal.ValidatingType = typeof(System.DateTime);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(116, 118);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(267, 37);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Buscar reservas";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormUpdateDelete
             // 
@@ -284,11 +264,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.ReservaCRUD;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.mskHorarioFinal);
-            this.Controls.Add(this.lblLocal);
-            this.Controls.Add(this.txtLocal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
@@ -334,11 +312,9 @@
         private System.Windows.Forms.Label lblEvento;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblLocal;
-        private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox mskHorarioFinal;
+        private System.Windows.Forms.Label label1;
     }
 }
