@@ -60,6 +60,7 @@ namespace wform_reserva_lab_E_ESSE_AQUI_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Dispose();
         }
     }

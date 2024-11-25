@@ -52,7 +52,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(802, 85);
+            this.lblTitulo.Location = new System.Drawing.Point(753, 97);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(232, 56);
@@ -64,7 +64,7 @@
             // 
             this.dGrdView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(223)))), ((int)(((byte)(196)))));
             this.dGrdView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGrdView.Location = new System.Drawing.Point(523, 156);
+            this.dGrdView.Location = new System.Drawing.Point(464, 172);
             this.dGrdView.Name = "dGrdView";
             this.dGrdView.Size = new System.Drawing.Size(790, 383);
             this.dGrdView.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSair.Location = new System.Drawing.Point(1103, 573);
+            this.btnSair.Location = new System.Drawing.Point(1044, 576);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(210, 52);
             this.btnSair.TabIndex = 20;
@@ -86,7 +86,7 @@
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnLimpar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLimpar.Location = new System.Drawing.Point(523, 573);
+            this.btnLimpar.Location = new System.Drawing.Point(464, 576);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(210, 52);
             this.btnLimpar.TabIndex = 18;
@@ -98,14 +98,14 @@
             // 
             this.txtNomeUti.Location = new System.Drawing.Point(204, 215);
             this.txtNomeUti.Name = "txtNomeUti";
-            this.txtNomeUti.Size = new System.Drawing.Size(245, 20);
+            this.txtNomeUti.Size = new System.Drawing.Size(213, 20);
             this.txtNomeUti.TabIndex = 24;
             // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBuscar.Location = new System.Drawing.Point(822, 573);
+            this.btnBuscar.Location = new System.Drawing.Point(763, 576);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(210, 52);
             this.btnBuscar.TabIndex = 3;
@@ -117,14 +117,14 @@
             // 
             this.txtAno.Location = new System.Drawing.Point(179, 417);
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(270, 20);
+            this.txtAno.Size = new System.Drawing.Size(238, 20);
             this.txtAno.TabIndex = 23;
             // 
             // txtMes
             // 
             this.txtMes.Location = new System.Drawing.Point(179, 368);
             this.txtMes.Name = "txtMes";
-            this.txtMes.Size = new System.Drawing.Size(270, 20);
+            this.txtMes.Size = new System.Drawing.Size(238, 20);
             this.txtMes.TabIndex = 22;
             // 
             // cmbTabela
@@ -132,7 +132,7 @@
             this.cmbTabela.FormattingEnabled = true;
             this.cmbTabela.Location = new System.Drawing.Point(108, 262);
             this.cmbTabela.Name = "cmbTabela";
-            this.cmbTabela.Size = new System.Drawing.Size(341, 21);
+            this.cmbTabela.Size = new System.Drawing.Size(309, 21);
             this.cmbTabela.TabIndex = 5;
             this.cmbTabela.SelectedIndexChanged += new System.EventHandler(this.cmbBox_SelectedIndexChanged);
             // 
@@ -207,7 +207,7 @@
             // 
             this.txtDia.Location = new System.Drawing.Point(179, 316);
             this.txtDia.Name = "txtDia";
-            this.txtDia.Size = new System.Drawing.Size(270, 20);
+            this.txtDia.Size = new System.Drawing.Size(238, 20);
             this.txtDia.TabIndex = 21;
             this.txtDia.TextChanged += new System.EventHandler(this.txtDia_TextChanged);
             // 
@@ -217,7 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.Relatorio;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMes);
             this.Controls.Add(this.lblDia);

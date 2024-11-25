@@ -41,7 +41,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(218, 147);
+            this.lblTitulo.Location = new System.Drawing.Point(207, 147);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(540, 75);
@@ -54,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(379, 235);
+            this.label1.Location = new System.Drawing.Point(368, 235);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 25);
@@ -68,7 +68,7 @@
             this.btnReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnReserva.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReserva.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnReserva.Location = new System.Drawing.Point(310, 364);
+            this.btnReserva.Location = new System.Drawing.Point(299, 364);
             this.btnReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnReserva.Name = "btnReserva";
             this.btnReserva.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -83,7 +83,7 @@
             // 
             this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnRelatorio.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.Location = new System.Drawing.Point(310, 449);
+            this.btnRelatorio.Location = new System.Drawing.Point(299, 449);
             this.btnRelatorio.Margin = new System.Windows.Forms.Padding(2);
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -99,7 +99,7 @@
             this.btnUpdateDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(84)))));
             this.btnUpdateDelete.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateDelete.Location = new System.Drawing.Point(310, 533);
+            this.btnUpdateDelete.Location = new System.Drawing.Point(299, 533);
             this.btnUpdateDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateDelete.Name = "btnUpdateDelete";
             this.btnUpdateDelete.Size = new System.Drawing.Size(353, 63);
@@ -113,7 +113,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(220)))), ((int)(((byte)(190)))));
             this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1171, 631);
+            this.button1.Location = new System.Drawing.Point(1085, 581);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 51);
             this.button1.TabIndex = 5;
@@ -126,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoInicio1;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnUpdateDelete);
             this.Controls.Add(this.btnRelatorio);

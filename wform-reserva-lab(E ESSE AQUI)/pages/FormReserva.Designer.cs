@@ -51,7 +51,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(252, 102);
+            this.lblTitulo.Location = new System.Drawing.Point(228, 102);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(878, 56);
@@ -64,7 +64,7 @@
             this.btnLab1.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.Lab1;
             this.btnLab1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLab1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLab1.Location = new System.Drawing.Point(253, 252);
+            this.btnLab1.Location = new System.Drawing.Point(229, 252);
             this.btnLab1.Margin = new System.Windows.Forms.Padding(2);
             this.btnLab1.Name = "btnLab1";
             this.btnLab1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -79,7 +79,7 @@
             this.btnLab2.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.Lab2;
             this.btnLab2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLab2.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLab2.Location = new System.Drawing.Point(475, 252);
+            this.btnLab2.Location = new System.Drawing.Point(451, 252);
             this.btnLab2.Margin = new System.Windows.Forms.Padding(2);
             this.btnLab2.Name = "btnLab2";
             this.btnLab2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -94,7 +94,7 @@
             this.button4.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.Lab3;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(698, 252);
+            this.button4.Location = new System.Drawing.Point(674, 252);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -109,7 +109,7 @@
             this.button2.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.Auditorio;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(923, 252);
+            this.button2.Location = new System.Drawing.Point(899, 252);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -124,7 +124,7 @@
             this.button5.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.LabQuimica;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(813, 427);
+            this.button5.Location = new System.Drawing.Point(789, 427);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -139,7 +139,7 @@
             this.button6.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.Siberia;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(589, 427);
+            this.button6.Location = new System.Drawing.Point(565, 427);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -154,7 +154,7 @@
             this.button7.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.SalaMaker;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(368, 427);
+            this.button7.Location = new System.Drawing.Point(344, 427);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 6);
@@ -179,7 +179,7 @@
             // lblLab2
             // 
             this.lblLab2.AutoSize = true;
-            this.lblLab2.Location = new System.Drawing.Point(549, 349);
+            this.lblLab2.Location = new System.Drawing.Point(525, 349);
             this.lblLab2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab2.Name = "lblLab2";
             this.lblLab2.Size = new System.Drawing.Size(69, 13);
@@ -190,7 +190,7 @@
             // lblLab3
             // 
             this.lblLab3.AutoSize = true;
-            this.lblLab3.Location = new System.Drawing.Point(767, 349);
+            this.lblLab3.Location = new System.Drawing.Point(743, 349);
             this.lblLab3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab3.Name = "lblLab3";
             this.lblLab3.Size = new System.Drawing.Size(69, 13);
@@ -201,7 +201,7 @@
             // lblLab4
             // 
             this.lblLab4.AutoSize = true;
-            this.lblLab4.Location = new System.Drawing.Point(1006, 349);
+            this.lblLab4.Location = new System.Drawing.Point(982, 349);
             this.lblLab4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab4.Name = "lblLab4";
             this.lblLab4.Size = new System.Drawing.Size(48, 13);
@@ -222,7 +222,7 @@
             // lblLab6
             // 
             this.lblLab6.AutoSize = true;
-            this.lblLab6.Location = new System.Drawing.Point(674, 523);
+            this.lblLab6.Location = new System.Drawing.Point(650, 523);
             this.lblLab6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab6.Name = "lblLab6";
             this.lblLab6.Size = new System.Drawing.Size(39, 13);
@@ -233,7 +233,7 @@
             // lblLab7
             // 
             this.lblLab7.AutoSize = true;
-            this.lblLab7.Location = new System.Drawing.Point(863, 523);
+            this.lblLab7.Location = new System.Drawing.Point(839, 523);
             this.lblLab7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLab7.Name = "lblLab7";
             this.lblLab7.Size = new System.Drawing.Size(118, 13);
@@ -245,7 +245,7 @@
             // 
             this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(220)))), ((int)(((byte)(190)))));
             this.btnSair.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(1172, 635);
+            this.btnSair.Location = new System.Drawing.Point(1078, 580);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(169, 51);
             this.btnSair.TabIndex = 23;
@@ -258,7 +258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.FundoReservas;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1284, 701);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblLab7);
             this.Controls.Add(this.lblLab6);

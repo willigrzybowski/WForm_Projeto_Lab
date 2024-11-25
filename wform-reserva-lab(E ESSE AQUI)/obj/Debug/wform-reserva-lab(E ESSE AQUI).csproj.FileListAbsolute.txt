@@ -257,3 +257,97 @@ E:\Wiliian\Projetos\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQU
 E:\Wiliian\Projetos\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-re.1179C797.Up2Date
 E:\Wiliian\Projetos\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).exe
 E:\Wiliian\Projetos\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe.config
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\BouncyCastle.Cryptography.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Google.Protobuf.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Hash.xxHash.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\MySql.Data.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Buffers.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Configuration.ConfigurationManager.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.IO.Pipelines.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Memory.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Numerics.Vectors.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\ZstdSharp.dll
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\BouncyCastle.Cryptography.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Google.Protobuf.pdb
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Google.Protobuf.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Hash.xxHash.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\MySql.Data.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Buffers.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Configuration.ConfigurationManager.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.IO.Pipelines.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Memory.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Numerics.Vectors.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.AssemblyReference.cache
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormInicio.resources
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormRelatorio.resources
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormReserva.resources
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.pages.FormUpdateDelete.resources
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.pages.labs.hrReserva.resources
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.resources
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.GenerateResource.cache
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.CoreCompileInputs.cache
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-re.1179C797.Up2Date
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).exe
+E:\projetoMagali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe.config
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).exe
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\wform-reserva-lab(E ESSE AQUI).pdb
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Google.Protobuf.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Hash.xxHash.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\MySql.Data.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Buffers.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.IO.Pipelines.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Memory.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Numerics.Vectors.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\ZstdSharp.dll
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Google.Protobuf.pdb
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Google.Protobuf.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\K4os.Hash.xxHash.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\MySql.Data.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Buffers.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.IO.Pipelines.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Memory.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Numerics.Vectors.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.AssemblyReference.cache
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormInicio.resources
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormRelatorio.resources
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.FormReserva.resources
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.pages.FormUpdateDelete.resources
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.pages.labs.hrReserva.resources
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform_reserva_lab_E_ESSE_AQUI_.Properties.Resources.resources
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.GenerateResource.cache
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).csproj.CoreCompileInputs.cache
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-re.1179C797.Up2Date
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).exe
+D:\Projeto 3 Magali\WForm_Projeto_Lab\wform-reserva-lab(E ESSE AQUI)\obj\Debug\wform-reserva-lab(E ESSE AQUI).pdb
